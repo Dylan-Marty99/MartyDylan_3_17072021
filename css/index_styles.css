@@ -1,6 +1,79 @@
-header {
-    background-color: brown;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*----------HEADER--------------------*/
+
+.header img {
+    display: block;
+    margin: 10px auto;
+    width: 170px;
+}
+
+.header_location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+    height: 35px;
+    border-top: rgb(207, 207, 207) solid 2px;
+}
+
+.header input {
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(234, 234, 234);
+}
+
+.header_explore {
+    background-color: rgb(247, 246, 246);
+}
+
+.header h2 {
+    width: 230px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+h2 span {
+    width: 150px;
+    margin-left: 40px;
+}
+
+.header p {
+    width: 260px;
+    margin: auto;
+    padding: 15px 0;
+}
+
+p span {
+    width: 150px;
+    margin-left: 40px;
+}
+
+.header form {
+    width: 215px;
+    margin: auto;
+}
+
+.header button {
+    width: 215px;
+    height: 50px;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 30px;
+}
+
+/*----------SECTION Fonctionnement----------*/
 
 .fonctionnement {
     background-color: darkcyan;
@@ -8,6 +81,11 @@ header {
 
 .restaurants {
     background-color: darkorange;
+}
+
+.restaurants img {
+    height: 170px;
+    width: 330px;
 }
 
 footer {
