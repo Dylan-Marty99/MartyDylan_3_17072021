@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41cef5f271.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index_styles.css">
     <title>Ohmyfood</title>
 </head>
 <!----------HEAD----------------->
-<!----------BODY----------------->
 
 <body>
     <div class="container">
@@ -19,14 +19,14 @@
             <div class="header">
                 <img src="images/logo/ohmyfood.png" alt="Logo">
                 <div class="header_location">
-                    <!--icône-->
-                    <span>Paris, Belleville</span>          <!--ajouter input search-->
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" name="location" placeholder="Paris, Belleville">    
                 </div>
                 <div class="header_explore">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                     <form action="#" method="POST">
-                        <button type="button" name="recherche">Explorer nos restaurants</button>
+                        <button type="button" name="explore">Explorer nos restaurants</button>
                     </form>
                 </div>
             </div>
@@ -41,16 +41,19 @@
                     <h2>Fonctionnement</h2>
                     <div class="fonctionnement_elements">
                         <div class="fonctionnement_elements-element">
-                            <!--icône-->
-                            <span>Choisissez un restaurant</span>
+                            <span class="fonctionnement_elements-element_number">1</span>
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="fonctionnement_elements-element_text">Choisissez un restaurant</span>
                         </div>
                         <div class="fonctionnement_elements-element">
-                            <!--icône-->
-                            <span>Composez votre menu</span>
+                            <span class="fonctionnement_elements-element_number">2</span>
+                            <i class="fas fa-list-ul"></i>
+                            <span class="fonctionnement_elements-element_text">Composez votre menu</span>
                         </div>
                         <div class="fonctionnement_elements-element">
-                            <!--icône-->
-                            <span>Dégustez au restaurant</span>
+                            <span class="fonctionnement_elements-element_number">3</span>
+                            <i class="fas fa-store"></i>
+                            <span class="fonctionnement_elements-element_text">Dégustez au restaurant</span>
                         </div>
                     </div>
                 </div>
@@ -70,7 +73,7 @@
                                     <div class="restaurant_elements-description_description">
                                         <h3>La palette du goût</h3>
                                         <p>Ménilmontant</p>
-                                        <!--icône-->
+                                        <i class="far fa-heart"></i>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +86,7 @@
                                     <div class="restaurant_elements-description_description">
                                         <h3>La note enchantée</h3>
                                         <p>Charonne</p>
-                                        <!--icône-->
+                                        <i class="far fa-heart"></i>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +97,7 @@
                                 <div class="restaurant_elements-description_description">
                                     <h3>À la française</h3>
                                     <p>Cité Rouge</p>
-                                    <!--icône-->
+                                    <i class="far fa-heart"></i>
                                 </div>
                             </div>
                         </a>
@@ -104,7 +107,7 @@
                                 <div class="restaurant_elements-description_description">
                                     <h3>Le délice des sens</h3>
                                     <p>Folie-Méricourt</p>
-                                    <!--icône-->
+                                    <i class="far fa-heart"></i>
                                 </div>
                             </div>
                         </a>
@@ -119,8 +122,8 @@
             <div class="footer">
                 <img src="images/logo/ohmyfood.png" alt="Logo">
                 <ul>
-                    <li><a href="#"><!--icône--> Proposer un restaurant</a></li>
-                    <li><a href="#"><!--icône--> Devenir partenaire</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+                    <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
