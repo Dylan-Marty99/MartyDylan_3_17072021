@@ -1,0 +1,23 @@
+header {
+    background-color: chartreuse;
+}
+
+.title {
+    background-color: indigo;
+}
+
+.entrees {
+    background-color: darkgoldenrod;
+}
+
+.plats {
+    background-color: darkred;
+}
+
+.desserts {
+    background-color: darkturquoise;
+}
+
+footer {
+    background-color: deeppink;
+}
