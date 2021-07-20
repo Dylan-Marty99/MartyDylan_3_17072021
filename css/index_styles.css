@@ -23,6 +23,10 @@ header img {
   width: 170px;
 }
 
+footer h3, .title h1 {
+  font-family: "Shrikhand", cursive;
+}
+
 form {
   width: 215px;
   margin: auto;
@@ -45,7 +49,6 @@ footer h3 {
   color: white;
   padding: 10px 0 0 15px;
   margin: 0;
-  font-family: "Shrikhand", cursive;
   font-size: 0.9em;
 }
 footer ul {
@@ -64,6 +67,49 @@ footer ul li a .fa-utensils {
 }
 footer ul li a .fa-hands-helping {
   padding-right: 9px;
+}
+
+.menu_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu_header i {
+  margin-left: 30px;
+}
+
+main img {
+  width: 100%;
+  height: 260px;
+}
+
+.menu {
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f7f6f6;
+}
+.menu_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_title h1 {
+  margin-left: 15px;
+}
+.menu_title i {
+  margin-right: 25px;
+  font-size: 1.2em;
+}
+.menu_subtitle {
+  color: #555555;
+}
+
+.menu_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main_header_location {
@@ -200,6 +246,7 @@ footer ul li a .fa-hands-helping {
 .restaurant_elements-description_description p {
   grid-row: 3;
   margin: 5px 0 0 10px;
+  color: #555555;
 }
 .restaurant_elements-description_description i {
   grid-column: 3;

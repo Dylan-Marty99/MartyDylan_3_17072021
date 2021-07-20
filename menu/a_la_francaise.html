@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/pages_styles.css">
+    <link rel="stylesheet" href="../css/menu_styles.css">
     <title>À la française</title>
 </head>
 <!--======== HEAD ==============-->
@@ -20,7 +20,7 @@
 
         <header>
             <div class="menu_header">
-                <i class="fas fa-arrow-left"></i>
+                <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
                 <img src="../images/logo/ohmyfood.png" alt="Logo">
             </div>
         </header>
@@ -29,72 +29,74 @@
 <!--======== MAIN ================-->
 
         <main>
-            <img src="../images/Resize images/a-la-francaise-resize.jpg" alt="Image À la française">
+            <img src="../images/Resize-images/a-la-francaise-resize.jpg" alt="Image À la française">
 
 <!--======== SECTION =============-->
 
             <section>
-                <div class="title">
-                    <h1>À la française</h1>
-                    <i class="far fa-heart"></i>
+                <div class="menu">
+                    <div class="menu_title">
+                        <h1>À la française</h1>
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <h2 class="menu_subtitle">Entrées</h2>
+                    <div class="menu_entrees">
+                        <div class="menu_entrees_elements">
+                            <p><span>Tartare de poulpe acidulé</span><br>
+                            Aux zestes d'orange</p>
+                            <span class="prix">25€</span>
+                        </div>
+                        <div class="menu_entrees_elements">
+                            <p><span>Velouté de légumes d'antan</span><br>
+                            Carotte, panais, topinambour</p>
+                            <span class="prix">35€</span>
+                        </div>
+                        <div class="menu_entrees_elements">
+                            <p><span>Soupe à l'oignon</span><br>
+                            Revisitée</p>
+                            <span class="prix">20€</span>
+                        </div>
+                    </div>
+                    <h2 class="menu_subtitle">Plats</h2>
+                    <div class="menu_plats">
+                        <div class="menu_plats_elements">
+                            <p><span>Coquilles Saint-Jacques</span><br>
+                            Accompagnées d'une purée de panais</p>
+                            <span class="prix">40€</span>
+                        </div>
+                        <div class="menu_plats_elements">
+                            <p><span>Magret de canard</span><br>
+                            Et parmentier de pommes de terre</p>
+                            <span class="prix">35€</span>
+                        </div>
+                        <div class="menu_plats_elements">
+                            <p><span>Pigeonneau d’Ille-et-Vilaine</span><br>
+                            Sur son lit de gnocchis aux légumes</p>
+                            <span class="prix">44€</span>
+                        </div>
+                    </div>
+                    <h2 class="menu_subtitle">Desserts</h2>
+                    <div class="menu_desserts">
+                        <div class="menu_desserts_elements">
+                            <p><span>Pétales de violettes glacés</span><br>
+                            Et purée de noisettes</p>
+                            <span class="prix">18€</span>
+                       </div>
+                        <div class="menu_desserts_elements">
+                            <p><span>Fondant au chocolat</span><br>
+                            Revisité</p>
+                            <span class="prix">22€</span>
+                        </div>
+                        <div class="menu_desserts_elements">
+                            <p><span>Millefeuille croustillant</span><br>
+                            Myrtilles et pâte d’amande</p>
+                            <span class="prix">23€</span>
+                        </div>
+                    </div>
+                    <form action="#" method="POST">
+                        <button type="button" name="commander">Commander</button>
+                    </form>
                 </div>
-                <h2>Entrées</h2>
-                <div class="entrees">
-                    <div class="entrees_elements">
-                        <p><span>Tartare de poulpe acidulé</span><br>
-                        Aux zestes d'orange</p>
-                        <span class="prix">25€</span>
-                    </div>
-                    <div class="entrees_elements">
-                        <p><span>Velouté de légumes d'antan</span><br>
-                        Carotte, panais, topinambour</p>
-                        <span class="prix">35€</span>
-                    </div>
-                    <div class="entrees_elements">
-                        <p><span>Soupe à l'oignon</span><br>
-                        Revisitée</p>
-                        <span class="prix">20€</span>
-                    </div>
-                </div>
-                <h2>Plats</h2>
-                <div class="plats">
-                    <div class="plats_elements">
-                        <p><span>Coquilles Saint-Jacques</span><br>
-                        Accompagnées d'une purée de panais</p>
-                        <span class="prix">40€</span>
-                    </div>
-                    <div class="plats_elements">
-                        <p><span>Magret de canard</span><br>
-                        Et parmentier de pommes de terre</p>
-                        <span class="prix">35€</span>
-                    </div>
-                    <div class="plats_elements">
-                        <p><span>Pigeonneau d’Ille-et-Vilaine</span><br>
-                        Sur son lit de gnocchis aux légumes</p>
-                        <span class="prix">44€</span>
-                    </div>
-                </div>
-                <h2>Desserts</h2>
-                <div class="desserts">
-                    <div class="desserts_elements">
-                        <p><span>Pétales de violettes glacés</span><br>
-                        Et purée de noisettes</p>
-                        <span class="prix">18€</span>
-                    </div>
-                    <div class="desserts_elements">
-                        <p><span>Fondant au chocolat</span><br>
-                        Revisité</p>
-                        <span class="prix">22€</span>
-                    </div>
-                    <div class="desserts_elements">
-                        <p><span>Millefeuille croustillant</span><br>
-                        Myrtilles et pâte d’amande</p>
-                        <span class="prix">23€</span>
-                    </div>
-                </div>
-                <form action="#" method="POST">
-                    <button type="button" name="commander">Commander</button>
-                </form>
             </section>
         </main>
 
