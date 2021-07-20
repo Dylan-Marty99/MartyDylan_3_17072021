@@ -1,3 +1,5 @@
+@import "../utils/utils.scss";
+
 .main_header {
     &_location {
         display: flex;
@@ -13,7 +15,7 @@
         background-color: rgb(234, 234, 234);
     }
     &_explore {
-        background-color: rgb(247, 246, 246);
+        background-color: $bg-color-primary;
     }
     h2 {
         width: 230px;
@@ -36,35 +38,46 @@
 }
 
 .fonctionnement {
+    margin-bottom: 50px;
     h2 {
         padding: 10px;
+        margin-bottom: 5px;
+    }
+    :nth-child(4) {
+        background-color: rgb(245, 237, 254);
     }
     &_element {
         display: flex;
         align-items: center;
-        width: 90%;                           /*-----border + shadow-----*/
-        margin: 10px auto;                    /*---bg color + bg color sur le dernier element---*/
-        border: solid black 2px;
-        border-radius: 2rem;
+        background-color: $bg-color-primary;
+        width: 90%;                           
+        margin: 10px auto 20px;                /*---bg color sur le dernier element---*/
+        box-shadow: $shadow;
+        border-radius: 1.5rem;
         height: 60px;
         &_number {
             position: absolute;
-            left: 20px;
-            background-color: blueviolet;                  /*---bg color----*/
+            left: 14px;
+            font-size: .7em;
+            background-color: $color-primary;                  
             color: white;
-            border-radius: 1rem;
-            padding: 5px;
+            border-radius: 2rem;
+            padding: 7px;
         }
         i {
-        padding-left: 30px;
-        padding-right: 20px;                    /*----color + color dernier element---*/
+        padding-left: 35px;
+        padding-right: 20px; 
+        color: rgb(126, 126, 126); 
         }
+        .fa-store {
+            color: $color-primary;
+        }  
     }
 }
 
 .restaurants {
-    background-color: rgb(209, 206, 202);           /*---bg color----*/
-    padding: 0 3%;
+    background-color: $bg-color-primary;           
+    padding: 0 5%;
     h2 {
         padding-top: 40px;
         padding-left: 3%;
@@ -77,8 +90,9 @@
 }
 
 .restaurant_elements-images {
-    margin-top: 15px;                               /*-----shadow----*/
+    margin-top: 15px;                               
     border-radius: 0 15px 15px 15px;
+    box-shadow: $shadow;
 }
 
 .restaurant_elements-images  img {
@@ -90,8 +104,8 @@
 
 #new1 {
     position: absolute;
-    right: 40px;
-    top: 730px;
+    right: 33px;
+    top: 760px;
     padding: 7px 10px;
     color: green;
     background-color: greenyellow;
@@ -99,8 +113,8 @@
                                                     /*---green color----*/
 #new2 {
     position: absolute;
-    right: 40px;
-    top: 980px;
+    right: 33px;
+    top: 1015px;
     padding: 7px 10px;
     color: green;
     background-color: greenyellow;

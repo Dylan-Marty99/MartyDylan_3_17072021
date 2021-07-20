@@ -1,5 +1,7 @@
+@import "../utils/utils.scss";
+
 footer {
-    background-color: rgb(77, 73, 77);              /*----bg color-----*/
+    background-color: $footer-color;            
     h3 {
         color: white;
         padding: 10px 0 0 15px;

@@ -1,3 +1,5 @@
+@import "../utils/utils.scss";
+
 form {
     width: 215px;
     margin: auto;
@@ -6,6 +8,7 @@ form {
         height: 50px;
         border-radius: 2rem;                    /*-----bg color-----*/
         border: none;
-        margin-bottom: 30px;
+        margin: 10px 0 40px;
+        box-shadow: $shadow;
     }
 }
