@@ -30,6 +30,33 @@ form button {
   margin-bottom: 30px;
 }
 
+footer {
+  background-color: #4d494d;
+  /*----bg color-----*/
+}
+footer h3 {
+  color: white;
+  padding: 10px 0 0 15px;
+  margin: 0;
+}
+footer ul {
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+footer ul li {
+  margin-top: 5px;
+}
+footer ul li a {
+  color: white;
+}
+footer ul li a .fa-utensils {
+  padding-right: 15px;
+}
+footer ul li a .fa-hands-helping {
+  padding-right: 9px;
+}
+
 .main_header_location {
   display: flex;
   justify-content: center;
@@ -163,13 +190,6 @@ form button {
   /*-----heart color ?----*/
   font-size: 1.3em;
   margin: 10px 0 0 -15px;
-}
-
-footer {
-  background-color: fuchsia;
-}
-footer img {
-  width: 100px;
 }
 
 /*# sourceMappingURL=index_styles.css.map */

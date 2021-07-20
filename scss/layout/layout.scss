@@ -1,0 +1,27 @@
+footer {
+    background-color: rgb(77, 73, 77);              /*----bg color-----*/
+    h3 {
+        color: white;
+        padding: 10px 0 0 15px;
+        margin: 0;
+    }
+    ul {
+        margin-bottom: 0;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        li {
+            margin-top: 5px;
+        
+            a {
+            color: white;
+                .fa-utensils {
+                    padding-right: 15px;
+                }
+                .fa-hands-helping {
+                    padding-right: 9px;
+                }
+            }
+        }
+    }
+}
+    
