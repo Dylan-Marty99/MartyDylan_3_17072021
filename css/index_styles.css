@@ -1,6 +1,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -38,6 +39,8 @@ footer h3 {
   color: white;
   padding: 10px 0 0 15px;
   margin: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 0.9em;
 }
 footer ul {
   margin-bottom: 0;
@@ -83,7 +86,7 @@ footer ul li a .fa-hands-helping {
   margin-left: 40px;
 }
 .main_header p {
-  width: 260px;
+  width: 280px;
   margin: auto;
   padding: 15px 0;
 }
@@ -128,7 +131,7 @@ footer ul li a .fa-hands-helping {
 }
 .restaurants h2 {
   padding-top: 40px;
-  padding-left: 10px;
+  padding-left: 3%;
   margin-bottom: 0;
 }
 
@@ -139,6 +142,7 @@ footer ul li a .fa-hands-helping {
 .restaurant_elements-images {
   margin-top: 15px;
   /*-----shadow----*/
+  border-radius: 0 15px 15px 15px;
 }
 
 .restaurant_elements-images img {
