@@ -1,0 +1,142 @@
+.main_header {
+    &_location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(234, 234, 234);
+        height: 35px;
+        border-top: rgb(207, 207, 207) solid 2px;
+    }
+    input {
+        margin-left: 10px;
+        border: none;                               
+        background-color: rgb(234, 234, 234);
+    }
+    &_explore {
+        background-color: rgb(247, 246, 246);
+    }
+    h2 {
+        width: 230px;
+        margin: auto;
+        padding-top: 25px;
+        span {
+            width: 150px;
+            margin-left: 40px;
+        }
+    }
+    p {
+        width: 260px;
+        margin: auto;
+        padding: 15px 0;
+        span {
+            width: 150px;
+            margin-left: 40px;
+        }
+    }
+}
+
+.fonctionnement {
+    h2 {
+        padding: 10px;
+    }
+    &_element {
+        display: flex;
+        align-items: center;
+        width: 90%;                           /*-----border + shadow-----*/
+        margin: 10px auto;                    /*---bg color + bg color sur le dernier element---*/
+        border: solid black 2px;
+        border-radius: 2rem;
+        height: 60px;
+        &_number {
+            position: absolute;
+            left: 20px;
+            background-color: blueviolet;                  /*---bg color----*/
+            color: white;
+            border-radius: 1rem;
+            padding: 5px;
+        }
+        i {
+        padding-left: 30px;
+        padding-right: 20px;                    /*----color + color dernier element---*/
+        }
+    }
+}
+
+.restaurants {
+    background-color: rgb(209, 206, 202);           /*---bg color----*/
+    padding: 0 3%;
+    h2 {
+        padding-top: 40px;
+        padding-left: 10px;
+        margin-bottom: 0;
+    }
+}
+
+.restaurant_elements {
+    padding-bottom: 40px;
+}
+
+.restaurant_elements-images {
+    margin-top: 15px;                               /*-----shadow----*/
+}
+
+.restaurant_elements-images  img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.restaurant_elements-description {
+
+}
+
+#new1 {
+    position: absolute;
+    right: 40px;
+    top: 730px;
+    padding: 7px 10px;
+    color: green;
+    background-color: greenyellow;
+}
+                                                    /*---green color----*/
+#new2 {
+    position: absolute;
+    right: 40px;
+    top: 980px;
+    padding: 7px 10px;
+    color: green;
+    background-color: greenyellow;
+}
+
+.restaurant_elements-description_description {
+    background-color: white;
+    height: 75px;
+    display: grid;
+    grid-template: 1fr 20px 20px 1fr / 1fr 1fr 30px;
+    margin-top: -10px;
+    border-radius: 0 0 15px 15px;
+    font-size: .9em;
+    h3 {
+        grid-row: 2;
+        margin: 0 0 0 10px;
+    }
+    p {
+        grid-row: 3;
+        margin: 5px 0 0 10px;
+    }
+    i {
+        grid-column: 3;
+        grid-row: 2/3;                             /*-----heart color ?----*/
+        font-size: 1.3em;
+        margin: 10px 0 0 -15px;
+    }
+}
+
+footer {
+    background-color: fuchsia;
+    img {
+        width: 100px;
+    }
+}

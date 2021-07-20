@@ -1,95 +1,175 @@
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-/*----------HEADER--------------------*/
-
-.header img {
-    display: block;
-    margin: 10px auto;
-    width: 170px;
+header img {
+  display: block;
+  margin: 10px auto;
+  width: 170px;
 }
 
-.header_location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(234, 234, 234);
-    height: 35px;
-    border-top: rgb(207, 207, 207) solid 2px;
+form {
+  width: 215px;
+  margin: auto;
+}
+form button {
+  width: 215px;
+  height: 50px;
+  border-radius: 2rem;
+  /*-----bg color-----*/
+  border: none;
+  margin-bottom: 30px;
 }
 
-.header input {
-    margin-left: 10px;
-    border: none;
-    background-color: rgb(234, 234, 234);
+.main_header_location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 35px;
+  border-top: #cfcfcf solid 2px;
+}
+.main_header input {
+  margin-left: 10px;
+  border: none;
+  background-color: #eaeaea;
+}
+.main_header_explore {
+  background-color: #f7f6f6;
+}
+.main_header h2 {
+  width: 230px;
+  margin: auto;
+  padding-top: 25px;
+}
+.main_header h2 span {
+  width: 150px;
+  margin-left: 40px;
+}
+.main_header p {
+  width: 260px;
+  margin: auto;
+  padding: 15px 0;
+}
+.main_header p span {
+  width: 150px;
+  margin-left: 40px;
 }
 
-.header_explore {
-    background-color: rgb(247, 246, 246);
+.fonctionnement h2 {
+  padding: 10px;
 }
-
-.header h2 {
-    width: 230px;
-    margin: auto;
-    padding-top: 25px;
+.fonctionnement_element {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  /*-----border + shadow-----*/
+  margin: 10px auto;
+  /*---bg color + bg color sur le dernier element---*/
+  border: solid black 2px;
+  border-radius: 2rem;
+  height: 60px;
 }
-
-h2 span {
-    width: 150px;
-    margin-left: 40px;
+.fonctionnement_element_number {
+  position: absolute;
+  left: 20px;
+  background-color: blueviolet;
+  /*---bg color----*/
+  color: white;
+  border-radius: 1rem;
+  padding: 5px;
 }
-
-.header p {
-    width: 260px;
-    margin: auto;
-    padding: 15px 0;
-}
-
-p span {
-    width: 150px;
-    margin-left: 40px;
-}
-
-.header form {
-    width: 215px;
-    margin: auto;
-}
-
-.header button {
-    width: 215px;
-    height: 50px;
-    border-radius: 2rem;
-    border: none;
-    margin-bottom: 30px;
-}
-
-/*----------SECTION Fonctionnement----------*/
-
-.fonctionnement {
-    background-color: darkcyan;
+.fonctionnement_element i {
+  padding-left: 30px;
+  padding-right: 20px;
+  /*----color + color dernier element---*/
 }
 
 .restaurants {
-    background-color: darkorange;
+  background-color: #d1ceca;
+  /*---bg color----*/
+  padding: 0 3%;
+}
+.restaurants h2 {
+  padding-top: 40px;
+  padding-left: 10px;
+  margin-bottom: 0;
 }
 
-.restaurants img {
-    height: 170px;
-    width: 330px;
+.restaurant_elements {
+  padding-bottom: 40px;
+}
+
+.restaurant_elements-images {
+  margin-top: 15px;
+  /*-----shadow----*/
+}
+
+.restaurant_elements-images img {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+#new1 {
+  position: absolute;
+  right: 40px;
+  top: 730px;
+  padding: 7px 10px;
+  color: green;
+  background-color: greenyellow;
+}
+
+/*---green color----*/
+#new2 {
+  position: absolute;
+  right: 40px;
+  top: 980px;
+  padding: 7px 10px;
+  color: green;
+  background-color: greenyellow;
+}
+
+.restaurant_elements-description_description {
+  background-color: white;
+  height: 75px;
+  display: grid;
+  grid-template: 1fr 20px 20px 1fr/1fr 1fr 30px;
+  margin-top: -10px;
+  border-radius: 0 0 15px 15px;
+  font-size: 0.9em;
+}
+.restaurant_elements-description_description h3 {
+  grid-row: 2;
+  margin: 0 0 0 10px;
+}
+.restaurant_elements-description_description p {
+  grid-row: 3;
+  margin: 5px 0 0 10px;
+}
+.restaurant_elements-description_description i {
+  grid-column: 3;
+  grid-row: 2/3;
+  /*-----heart color ?----*/
+  font-size: 1.3em;
+  margin: 10px 0 0 -15px;
 }
 
 footer {
-    background-color: fuchsia;
+  background-color: fuchsia;
+}
+footer img {
+  width: 100px;
 }
 
-
+/*# sourceMappingURL=index_styles.css.map */
