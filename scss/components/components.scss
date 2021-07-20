@@ -6,9 +6,11 @@ form {
     button {
         width: 215px;
         height: 50px;
-        border-radius: 2rem;                    /*-----bg color-----*/
+        border-radius: 2rem;                    
         border: none;
         margin: 10px 0 40px;
         box-shadow: $shadow;
+        color: white;
+        background: linear-gradient(to top left, $bg-btn);
     }
 }

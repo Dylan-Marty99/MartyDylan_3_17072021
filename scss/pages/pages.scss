@@ -51,7 +51,7 @@
         align-items: center;
         background-color: $bg-color-primary;
         width: 90%;                           
-        margin: 10px auto 20px;                /*---bg color sur le dernier element---*/
+        margin: 10px auto 20px;                
         box-shadow: $shadow;
         border-radius: 1.5rem;
         height: 60px;
@@ -105,19 +105,19 @@
 #new1 {
     position: absolute;
     right: 33px;
-    top: 760px;
+    top: 780px;
     padding: 7px 10px;
-    color: green;
-    background-color: greenyellow;
+    color: $color-new;
+    background-color: $bg-color-new;
 }
-                                                    /*---green color----*/
+                                                  
 #new2 {
     position: absolute;
     right: 33px;
-    top: 1015px;
+    top: 1035px;
     padding: 7px 10px;
-    color: green;
-    background-color: greenyellow;
+    color: $color-new;
+    background-color: $bg-color-new;
 }
 
 .restaurant_elements-description_description {
