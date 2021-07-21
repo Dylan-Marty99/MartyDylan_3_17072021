@@ -61,7 +61,7 @@ main img {
 .menu {
   border-radius: 2rem 2rem 0 0;
   background-color: #f7f6f6;
-  padding: 0 3%;
+  padding: 0 3% 30px;
 }
 .menu_title {
   display: flex;
@@ -78,10 +78,17 @@ main img {
 }
 .menu_subtitle {
   color: #555555;
-  padding-bottom: 5px;
-  border-bottom: #a9e0d1 solid 3px;
   text-transform: uppercase;
   font-size: 1.2em;
+}
+.menu_subtitle_border {
+  width: 45px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  border-bottom: #a9e0d1 solid 3px;
+}
+.menu_entrees {
+  margin-bottom: 40px;
 }
 .menu_entrees_elements {
   display: flex;
@@ -108,6 +115,9 @@ main img {
   align-self: flex-end;
   padding: 0 18px 10px 0;
 }
+.menu_plats {
+  margin-bottom: 40px;
+}
 .menu_plats_elements {
   display: flex;
   justify-content: space-between;
@@ -132,6 +142,9 @@ main img {
 .menu_plats_elements .prix {
   align-self: flex-end;
   padding: 0 18px 10px 0;
+}
+.menu_desserts {
+  margin-bottom: 40px;
 }
 .menu_desserts_elements {
   display: flex;

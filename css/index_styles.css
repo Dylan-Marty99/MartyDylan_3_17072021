@@ -23,12 +23,10 @@ header img {
   width: 170px;
 }
 
-footer h3, .title h1 {
+footer h3, .menu_title h1 {
   font-family: "Shrikhand", cursive;
 }
 
-/*--------Variables---------*/
-/*--------Mixins---------*/
 form {
   width: 215px;
   margin: auto;
@@ -44,8 +42,6 @@ form button {
   background: linear-gradient(to top left, #9b5fd4, #c878dc, #e997e2);
 }
 
-/*--------Variables---------*/
-/*--------Mixins---------*/
 .menu_header {
   display: flex;
   flex-direction: row;
@@ -65,6 +61,7 @@ main img {
 .menu {
   border-radius: 2rem 2rem 0 0;
   background-color: #f7f6f6;
+  padding: 0 3% 30px;
 }
 .menu_title {
   display: flex;
@@ -73,6 +70,7 @@ main img {
 }
 .menu_title h1 {
   margin-left: 15px;
+  font-size: 1.7em;
 }
 .menu_title i {
   margin-right: 25px;
@@ -80,6 +78,98 @@ main img {
 }
 .menu_subtitle {
   color: #555555;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.menu_subtitle_border {
+  width: 45px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  border-bottom: #a9e0d1 solid 3px;
+}
+.menu_entrees {
+  margin-bottom: 40px;
+}
+.menu_entrees_elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 15px;
+  border-radius: 1.2rem;
+  box-shadow: #c4bfbf 2px 2px 10px;
+}
+.menu_entrees_elements_description {
+  padding-left: 10px;
+}
+.menu_entrees_elements .description_bold {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.menu_entrees_elements .description_normal {
+  color: #555555;
+  font-size: 0.9em;
+}
+.menu_entrees_elements .prix {
+  align-self: flex-end;
+  padding: 0 18px 10px 0;
+}
+.menu_plats {
+  margin-bottom: 40px;
+}
+.menu_plats_elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 15px;
+  border-radius: 1.2rem;
+  box-shadow: #c4bfbf 2px 2px 10px;
+}
+.menu_plats_elements_description {
+  padding-left: 10px;
+}
+.menu_plats_elements .description_bold {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.menu_plats_elements .description_normal {
+  color: #555555;
+  font-size: 0.9em;
+}
+.menu_plats_elements .prix {
+  align-self: flex-end;
+  padding: 0 18px 10px 0;
+}
+.menu_desserts {
+  margin-bottom: 40px;
+}
+.menu_desserts_elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 15px;
+  border-radius: 1.2rem;
+  box-shadow: #c4bfbf 2px 2px 10px;
+}
+.menu_desserts_elements_description {
+  padding-left: 10px;
+}
+.menu_desserts_elements .description_bold {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.menu_desserts_elements .description_normal {
+  color: #555555;
+  font-size: 0.9em;
+}
+.menu_desserts_elements .prix {
+  align-self: flex-end;
+  padding: 0 18px 10px 0;
 }
 
 /*---------FOOTER---------------*/
@@ -110,8 +200,6 @@ footer ul li a .fa-hands-helping {
   padding-right: 9px;
 }
 
-/*--------Variables---------*/
-/*--------Mixins---------*/
 /*---------HEADER index---------------*/
 .main_header_location {
   display: flex;
@@ -250,8 +338,5 @@ footer ul li a .fa-hands-helping {
   font-size: 1.3em;
   margin: 10px 0 0 -15px;
 }
-
-/*--------Variables---------*/
-/*--------Mixins---------*/
 
 /*# sourceMappingURL=index_styles.css.map */
