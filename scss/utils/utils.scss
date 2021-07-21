@@ -2,7 +2,7 @@ $shadow: (rgb(196, 191, 191) 2px 2px 10px);
 $footer-color: rgb(54, 53, 53);
 $color-primary: rgb(139, 89, 213);
 $color-new: rgb(52, 127, 98);
-$bg-color-new: rgb(169, 224, 209);
+$bg-color-secondary: rgb(169, 224, 209);
 $bg-color-primary: rgb(247, 246, 246);
 $bg-btn: ( rgb(155, 95, 212), rgb(200, 120, 220) , rgb(233, 151, 226) );
 $text-color: rgb(85, 85, 85);
@@ -13,5 +13,31 @@ $text-color: rgb(85, 85, 85);
     right: 33px;
     padding: 7px 10px;
     color: $color-new;
-    background-color: $bg-color-new;
+    background-color: $bg-color-secondary;
+}
+
+@mixin menu-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 1.2rem;
+    box-shadow: $shadow;
+    &_description {
+        padding-left: 10px;
+    }
+    .description_bold {
+        color: black;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    .description_normal {
+        color: $text-color;
+        font-size: .9em;
+    }
+    .prix {
+        align-self: flex-end;
+        padding: 0 18px 10px 0;
+    }
 }

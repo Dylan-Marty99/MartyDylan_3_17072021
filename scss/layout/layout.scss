@@ -20,12 +20,14 @@ main img {
 .menu {
     border-radius: 2rem 2rem 0 0;
     background-color: $bg-color-primary;
+    padding: 0 3%;
     &_title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         h1 {
             margin-left: 15px;
+            font-size: 1.7em;
         }
         i {
             margin-right: 25px;
@@ -34,7 +36,20 @@ main img {
     }     
     &_subtitle {
         color: $text-color;
+        padding-bottom: 5px;
+        border-bottom: $bg-color-secondary solid 3px;
+        text-transform: uppercase;
+        font-size: 1.2em;
     } 
+    &_entrees_elements {
+        @include menu-elements;
+    }
+    &_plats_elements {
+        @include menu-elements;
+    }
+    &_desserts_elements {
+        @include menu-elements;
+    }
 }
 
 
