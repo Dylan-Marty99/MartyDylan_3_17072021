@@ -105,6 +105,7 @@ main img {
   margin-bottom: 15px;
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
+  cursor: pointer;
 }
 .menu_entrees_elements_description {
   padding-left: 10px;
@@ -133,6 +134,7 @@ main img {
   margin-bottom: 15px;
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
+  cursor: pointer;
 }
 .menu_plats_elements_description {
   padding-left: 10px;
@@ -161,6 +163,7 @@ main img {
   margin-bottom: 15px;
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
+  cursor: pointer;
 }
 .menu_desserts_elements_description {
   padding-left: 10px;
