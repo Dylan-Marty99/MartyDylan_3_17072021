@@ -27,6 +27,8 @@ footer h3, .title h1 {
   font-family: "Shrikhand", cursive;
 }
 
+/*--------Variables---------*/
+/*--------Mixins---------*/
 form {
   width: 215px;
   margin: auto;
@@ -42,6 +44,45 @@ form button {
   background: linear-gradient(to top left, #9b5fd4, #c878dc, #e997e2);
 }
 
+/*--------Variables---------*/
+/*--------Mixins---------*/
+.menu_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu_header i {
+  margin-left: 30px;
+}
+
+main img {
+  width: 100%;
+  height: 260px;
+}
+
+/*---------SECTION Menu---------------*/
+.menu {
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f7f6f6;
+}
+.menu_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_title h1 {
+  margin-left: 15px;
+}
+.menu_title i {
+  margin-right: 25px;
+  font-size: 1.2em;
+}
+.menu_subtitle {
+  color: #555555;
+}
+
+/*---------FOOTER---------------*/
 footer {
   background-color: #363535;
 }
@@ -69,49 +110,9 @@ footer ul li a .fa-hands-helping {
   padding-right: 9px;
 }
 
-.menu_header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.menu_header i {
-  margin-left: 30px;
-}
-
-main img {
-  width: 100%;
-  height: 260px;
-}
-
-.menu {
-  border-radius: 2rem 2rem 0 0;
-  background-color: #f7f6f6;
-}
-.menu_title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu_title h1 {
-  margin-left: 15px;
-}
-.menu_title i {
-  margin-right: 25px;
-  font-size: 1.2em;
-}
-.menu_subtitle {
-  color: #555555;
-}
-
-.menu_title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
+/*--------Variables---------*/
+/*--------Mixins---------*/
+/*---------HEADER index---------------*/
 .main_header_location {
   display: flex;
   justify-content: center;
@@ -147,6 +148,7 @@ main img {
   margin-left: 40px;
 }
 
+/*---------SECTION Fonctionnement index---------------*/
 .fonctionnement {
   margin-bottom: 50px;
 }
@@ -169,12 +171,12 @@ main img {
 }
 .fonctionnement_element_number {
   position: absolute;
-  left: 14px;
-  font-size: 0.7em;
+  left: 10px;
+  font-size: 0.8em;
   background-color: #8b59d5;
   color: white;
-  border-radius: 2rem;
-  padding: 7px;
+  border-radius: 50%;
+  padding: 4px 8px;
 }
 .fonctionnement_element i {
   padding-left: 35px;
@@ -185,6 +187,7 @@ main img {
   color: #8b59d5;
 }
 
+/*---------SECTION restaurant index---------------*/
 .restaurants {
   background-color: #f7f6f6;
   padding: 0 5%;
@@ -194,43 +197,35 @@ main img {
   padding-left: 3%;
   margin-bottom: 0;
 }
-
-.restaurant_elements {
+.restaurants_elements {
   padding-bottom: 40px;
 }
-
-.restaurant_elements-images {
+.restaurants_elements-images {
   margin-top: 15px;
   border-radius: 0 15px 15px 15px;
   box-shadow: #c4bfbf 2px 2px 10px;
 }
-
-.restaurant_elements-images img {
+.restaurants_elements img {
   height: 170px;
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
-#new1 {
+.restaurants_elements-description #new1, .restaurants_elements-description #new2 {
   position: absolute;
   right: 33px;
+  padding: 7px 10px;
+  color: #347f62;
+  background-color: #a9e0d1;
+}
+.restaurants_elements-description #new1 {
   top: 780px;
-  padding: 7px 10px;
-  color: #347f62;
-  background-color: #a9e0d1;
 }
-
-#new2 {
-  position: absolute;
-  right: 33px;
+.restaurants_elements-description #new2 {
   top: 1035px;
-  padding: 7px 10px;
-  color: #347f62;
-  background-color: #a9e0d1;
 }
-
-.restaurant_elements-description_description {
+.restaurants_elements-description_description {
   background-color: white;
   height: 75px;
   display: grid;
@@ -239,21 +234,24 @@ main img {
   border-radius: 0 0 15px 15px;
   font-size: 0.9em;
 }
-.restaurant_elements-description_description h3 {
+.restaurants_elements-description_description h3 {
   grid-row: 2;
   margin: 0 0 0 10px;
 }
-.restaurant_elements-description_description p {
+.restaurants_elements-description_description p {
   grid-row: 3;
   margin: 5px 0 0 10px;
   color: #555555;
 }
-.restaurant_elements-description_description i {
+.restaurants_elements-description_description i {
   grid-column: 3;
   grid-row: 2/3;
   /*-----heart color ?----*/
   font-size: 1.3em;
   margin: 10px 0 0 -15px;
 }
+
+/*--------Variables---------*/
+/*--------Mixins---------*/
 
 /*# sourceMappingURL=index_styles.css.map */
