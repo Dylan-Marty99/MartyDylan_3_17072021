@@ -50,7 +50,7 @@ main img {
         &_elements {
             @include menu-elements;
         }
-    }
+    }                                                 /*---animation vers gauche----*/
     &_plats {
         margin-bottom: 40px;
         &_elements {
@@ -84,13 +84,16 @@ footer {
             margin-top: 5px;
         
             a {
-            color: white;
+            color: white;                             
                 .fa-utensils {
                     padding-right: 15px;
                 }
                 .fa-hands-helping {
                     padding-right: 9px;
                 }
+            }
+            a:hover {
+                text-decoration: underline;
             }
         }
     }

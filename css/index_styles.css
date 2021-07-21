@@ -39,7 +39,13 @@ form button {
   margin: 10px 0 40px;
   box-shadow: #c4bfbf 2px 2px 10px;
   color: white;
+  cursor: pointer;
   background: linear-gradient(to top left, #9b5fd4, #c878dc, #e997e2);
+  transition: all 0.5s;
+}
+form button:hover {
+  filter: brightness(125%);
+  box-shadow: #5f5d5d 4px 4px 8px;
 }
 
 .menu_header {
@@ -62,6 +68,7 @@ main img {
   border-radius: 2rem 2rem 0 0;
   background-color: #f7f6f6;
   padding: 0 3% 30px;
+  /*---animation vers gauche----*/
 }
 .menu_title {
   display: flex;
@@ -199,6 +206,9 @@ footer ul li a .fa-utensils {
 footer ul li a .fa-hands-helping {
   padding-right: 9px;
 }
+footer ul li a:hover {
+  text-decoration: underline;
+}
 
 /*---------HEADER index---------------*/
 .main_header_location {
@@ -292,6 +302,9 @@ footer ul li a .fa-hands-helping {
   margin-top: 15px;
   border-radius: 0 15px 15px 15px;
   box-shadow: #c4bfbf 2px 2px 10px;
+}
+.restaurants_elements-images:hover h3 {
+  color: #8b59d5;
 }
 .restaurants_elements img {
   height: 170px;
