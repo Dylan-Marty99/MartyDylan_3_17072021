@@ -15,6 +15,9 @@
         margin-left: 10px;
         border: none;                               
         background-color: rgb(234, 234, 234);
+        @include desktop {
+            font-size: 1em;
+        }
     }
     &_explore {
         background-color: $bg-color-primary;
@@ -23,18 +26,30 @@
         width: 230px;
         margin: auto;
         padding-top: 25px;
+        @include large-smartphone {
+            width: 380px;
+        }
         span {
             width: 150px;
             margin-left: 40px;
+            @include large-smartphone {
+                margin-left: 0;
+            }
         }
     }
     p {
         width: 280px;
         margin: auto;
         padding: 15px 0;
+        @include tablet {
+            width: 480px;
+        }
         span {
             width: 150px;
             margin-left: 40px;
+            @include tablet {
+                margin-left: 0;
+            }
         }
     }
 }
@@ -46,19 +61,42 @@
     h2 {
         padding: 10px;
         margin-bottom: 5px;
+        @include large-smartphone {
+            padding-left: 5%;
+        }
+        @include large-desktop {
+            width: 100%;
+        }
     }
     :nth-child(4) {
         background-color: rgb(245, 237, 254);
+    }
+    @include large-desktop {
+        display: flex;
+        flex-wrap: wrap;
     }
     &_element {
         display: flex;
         align-items: center;
         background-color: $bg-color-primary;
-        width: 90%;                           
+        width: 90%;                          
         margin: 10px auto 20px;                
         box-shadow: $shadow;
         border-radius: 1.5rem;
         height: 60px;
+        @include tablet {
+            width: 80%;
+            max-width: 600px;
+            margin-left: 10%;
+            font-size: 1.1em;
+        }
+        @include desktop {
+            margin-left: 8%;
+        }
+        @include large-desktop {
+            margin-left: 2%;
+            width: 440px;
+        }
         &_number {
             position: absolute;
             left: 10px;
@@ -67,6 +105,24 @@
             color: white;
             border-radius: 50%;
             padding: 4px 8px;
+            @include large-smartphone {
+                left: 22px;
+            }
+            @include tablet {
+                left: 40px;
+                font-size: 1em;
+                padding: 6px 10px;
+            }
+            @include desktop {
+                position: inherit;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 5%;
+                height: 60px;
+                padding: 0;
+                border-radius: 1.5rem 0 0 1.5rem;
+            }
         }
         i {
         padding-left: 35px;

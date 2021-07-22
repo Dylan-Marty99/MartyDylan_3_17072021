@@ -1,3 +1,5 @@
+@import "../utils/utils.scss";
+
 body {
     margin: 0;
 }
@@ -21,6 +23,9 @@ header img {
     display: block;
     margin: 10px auto;
     width: 170px;
+    @include tablet {
+        width: 250px;
+    }
 }
 
 footer h3, .menu_title h1 {

@@ -6,6 +6,12 @@ $bg-color-secondary: rgb(169, 224, 209);
 $bg-color-primary: rgb(247, 246, 246);
 $bg-btn: ( rgb(155, 95, 212), rgb(200, 120, 220) , rgb(233, 151, 226) );
 $text-color: rgb(85, 85, 85);
+$breakpoints: (
+    large-smartphone: 550px,
+    tablet: 800px,
+    desktop: 1024px,
+    large-desktop: 1440px,
+);
 
 
 @mixin news {
@@ -40,5 +46,29 @@ $text-color: rgb(85, 85, 85);
     .prix {
         align-self: flex-end;
         padding: 0 18px 10px 0;
+    }
+}
+
+@mixin large-smartphone {
+    @media screen and (min-width: map-get($breakpoints, large-smartphone )) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet )) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop )) {
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media screen and (min-width: map-get($breakpoints, large-desktop )) {
+        @content;
     }
 }
