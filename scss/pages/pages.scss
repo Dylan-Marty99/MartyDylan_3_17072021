@@ -157,6 +157,7 @@
             @include tablet {
                 width: 45%;
                 margin-right: 5%;
+                margin-top: 25px;
             }
         }
         &-images {
@@ -165,6 +166,9 @@
             box-shadow: $shadow;
             @include large-smartphone {
                 margin-top: 25px;
+            }
+            @include tablet {
+                margin-top: 0;
             }
             &:hover {
                 h3 {

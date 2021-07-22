@@ -43,19 +43,13 @@ main {
 /*---------SECTION Menu---------------*/
 
 .menu {
-    position: absolute;
-    top: 260px;
     width: 94%;
     border-radius: 2rem 2rem 0 0;
-    background-color: $bg-color-primary;
+    background-color: $bg-color-primary;            /*---faire passer sur image---*/
     padding: 0 3% 30px;
-    @include large-smartphone {
-        top: 280px;
-    }
     @include tablet {
-        position: initial;
         border-radius: initial;
-        margin-top: -5px;
+        margin-top: -10px;
     }
     @include desktop {
         margin-top: 0;
@@ -105,7 +99,7 @@ main {
 /*---------FOOTER---------------*/
 
 footer {
-    background-color: $footer-color;            
+    background-color: $footer-color;  
     h3 {
         color: white;
         padding: 10px 0 0 15px;

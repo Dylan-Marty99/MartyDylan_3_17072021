@@ -102,24 +102,17 @@ main #main_images_desktop {
 
 /*---------SECTION Menu---------------*/
 .menu {
-  position: absolute;
-  top: 260px;
   width: 94%;
   border-radius: 2rem 2rem 0 0;
   background-color: #f7f6f6;
+  /*---faire passer sur image---*/
   padding: 0 3% 30px;
   /*---animation vers gauche----*/
 }
-@media screen and (min-width: 550px) {
-  .menu {
-    top: 280px;
-  }
-}
 @media screen and (min-width: 800px) {
   .menu {
-    position: initial;
     border-radius: initial;
-    margin-top: -5px;
+    margin-top: -10px;
   }
 }
 @media screen and (min-width: 1024px) {
