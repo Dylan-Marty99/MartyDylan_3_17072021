@@ -1,6 +1,9 @@
 @import "../utils/utils.scss";
 
 .menu_header {
+    @include desktop {
+        border-bottom: rgb(207, 207, 207) solid 2px;
+    }
     a {
         position: absolute;
         left: 15px;
@@ -12,15 +15,30 @@
     }
 }
 
-main img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    @include tablet {
-        width: 70%;
-        margin: 0 15%;
+main {
+    .main_images {
+        display: flex;
+        margin: 10px 0;
+        &-image {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            @include desktop {
+                width: 45%;
+                margin: 0 2.5%;
+                border-radius: .7rem;
+            }
+        }
+    }
+    #main_images_desktop {
+        display: none;
+        @include desktop {
+            display: inline-block;
+        }
     }
 }
+
+
 
 /*---------SECTION Menu---------------*/
 
@@ -39,17 +57,26 @@ main img {
         border-radius: initial;
         margin-top: -5px;
     }
+    @include desktop {
+        margin-top: 0;
+    }
     &_title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include desktop {
+            justify-content: flex-start;
+            font-size: 1.15em;
+        }
         h1 {
-            margin-left: 15px;
             font-size: 1.7em;
         }
         i {
             margin-right: 25px;
             font-size: 1.2em;
+            @include desktop {
+                margin: 0 0 0 4%;
+            }
         }
     }     
     &_subtitle {
@@ -64,22 +91,13 @@ main img {
         }
     } 
     &_entrees {
-        margin-bottom: 40px;
-        &_elements {
-            @include menu-elements;
-        }
+        @include menu-elements;
     }                                                 /*---animation vers gauche----*/
     &_plats {
-        margin-bottom: 40px;
-        &_elements {
-            @include menu-elements;
-        }
+        @include menu-elements;
     }
     &_desserts {
-        margin-bottom: 40px;
-        &_elements {
-            @include menu-elements;
-        }
+        @include menu-elements;
     }
 }
 

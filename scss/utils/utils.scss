@@ -23,29 +23,59 @@ $breakpoints: (
 }
 
 @mixin menu-elements {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    margin-bottom: 15px;
-    border-radius: 1.2rem;
-    box-shadow: $shadow;
-    cursor: pointer;
-    &_description {
-        padding-left: 10px;
+    margin-bottom: 40px;
+    @include tablet {
+        margin: 0 0 6% 40px;
     }
-    .description_bold {
-        color: black;
-        font-weight: bold;
-        font-size: 1.1em;
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
     }
-    .description_normal {
-        color: $text-color;
-        font-size: .9em;
-    }
-    .prix {
-        align-self: flex-end;
-        padding: 0 18px 10px 0;
+    &_elements {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        margin-bottom: 15px;
+        border-radius: 1.2rem;
+        box-shadow: $shadow;
+        cursor: pointer;
+        &:hover {
+            .description_bold {
+                color :$color-primary;
+            }
+        }
+        &_description {
+            padding-left: 10px;
+            @include desktop {
+                padding-left: 3%;
+            }
+        }
+        .description_bold {
+            color: black;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .description_normal {
+            color: $text-color;
+            font-size: .9em;
+        }
+        .prix {
+            align-self: flex-end;
+            padding: 0 18px 10px 0;
+        }
+        @include tablet {
+            width: 90%;
+        }
+        @include desktop {
+            width: 45%;
+            margin-left: 3%;
+        }
+        @include large-desktop() {
+            margin-left: 0;
+            margin-right: 3%;
+        }
     }
 }
 
