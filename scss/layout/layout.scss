@@ -74,15 +74,32 @@ footer {
         color: white;
         padding: 10px 0 0 15px;
         margin: 0;
-        font-size: .9em;
+        font-size: 1.1em;
+        @include tablet {
+            padding-left: 5%;
+        }
+        @include desktop {
+            font-size: 1.5em;
+        }
     }
     ul {
         margin-bottom: 0;
         padding-left: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-left: 0;
+        }
         li {
-            margin-top: 5px;
-        
+            margin-top: 8px;
+            @include tablet {
+                width: 45%;
+            }
+            @include desktop {
+                font-size: 1.15em;
+            }
             a {
             color: white;                             
                 .fa-utensils {
