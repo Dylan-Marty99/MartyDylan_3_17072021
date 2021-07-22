@@ -1,26 +1,44 @@
 @import "../utils/utils.scss";
 
 .menu_header {
-    display: flex;
-    flex-direction: row;                    /*---aligner logo centre---*/
-    justify-content: center;
-    align-items: center;
-    i {
-        margin-left: 30px;
+    a {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        @include tablet {
+            font-size: 1.3em;
+            top: 20px;
+        }
     }
 }
 
 main img {
     width: 100%;
     height: 260px;
+    object-fit: cover;
+    @include tablet {
+        width: 70%;
+        margin: 0 15%;
+    }
 }
 
 /*---------SECTION Menu---------------*/
 
 .menu {
+    position: absolute;
+    top: 260px;
+    width: 94%;
     border-radius: 2rem 2rem 0 0;
     background-color: $bg-color-primary;
     padding: 0 3% 30px;
+    @include large-smartphone {
+        top: 280px;
+    }
+    @include tablet {
+        position: initial;
+        border-radius: initial;
+        margin-top: -5px;
+    }
     &_title {
         display: flex;
         justify-content: space-between;
