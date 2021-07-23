@@ -23,11 +23,11 @@
         background-color: $bg-color-primary;
     }
     h2 {
-        width: 230px;
+        width: 235px;
         margin: auto;
         padding-top: 25px;
         @include large-smartphone {
-            width: 380px;
+            width: 395px;
         }
         span {
             width: 150px;
@@ -219,7 +219,7 @@
         background-color: white;
         height: 75px;
         display: grid;
-        grid-template: 1fr 20px 20px 1fr / 1fr 1fr 30px;
+        grid-template: 1fr 20px 20px 1fr / 1fr 1fr 40px;
         margin-top: -10px;
         border-radius: 0 0 15px 15px;
         font-size: .9em;
@@ -232,11 +232,13 @@
             margin: 5px 0 0 10px;
             color: $text-color;
         }
-        i {
-            grid-column: 3;
-            grid-row: 2/3;                             /*-----heart color ?----*/
-            font-size: 1.3em;
-            margin: 10px 0 0 -15px;
+        .transparent_hearts {
+            @include hearts-position;           /*-----hearts color----*/
+            @include transparent-hearts;
+        }
+        .colored_hearts {
+            @include hearts-position;
+            @include colored-hearts;
         }
     }
 }

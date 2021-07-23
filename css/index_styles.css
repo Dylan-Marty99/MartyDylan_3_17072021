@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*----hearts color----*/
 body {
   margin: 0;
 }
@@ -33,6 +34,7 @@ footer h3, .menu_title h1 {
   font-family: "Shrikhand", cursive;
 }
 
+/*----hearts color----*/
 form {
   width: 215px;
   margin: auto;
@@ -59,6 +61,7 @@ form button:hover {
   }
 }
 
+/*----hearts color----*/
 @media screen and (min-width: 1024px) {
   .menu_header {
     border-bottom: #cfcfcf solid 2px;
@@ -106,13 +109,14 @@ main #main_images_desktop {
   width: 94%;
   border-radius: 2rem 2rem 0 0;
   background-color: #f7f6f6;
+  /*---faire passer sur image---*/
   padding: 0 3% 30px;
   /*---animation vers gauche----*/
 }
 @media screen and (min-width: 800px) {
   .menu {
     border-radius: initial;
-    margin-top: -5px;
+    margin-top: -10px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -412,6 +416,7 @@ footer ul li a:hover {
   text-decoration: underline;
 }
 
+/*----hearts color----*/
 /*---------HEADER index---------------*/
 .main_header_location {
   display: flex;
@@ -435,13 +440,13 @@ footer ul li a:hover {
   background-color: #f7f6f6;
 }
 .main_header h2 {
-  width: 230px;
+  width: 235px;
   margin: auto;
   padding-top: 25px;
 }
 @media screen and (min-width: 550px) {
   .main_header h2 {
-    width: 380px;
+    width: 395px;
   }
 }
 .main_header h2 span {
@@ -632,6 +637,7 @@ footer ul li a:hover {
   padding: 7px 10px;
   color: #347f62;
   background-color: #a9e0d1;
+  border-radius: 5%;
 }
 @media screen and (min-width: 550px) {
   .restaurants_elements-description #new1, .restaurants_elements-description #new2 {
@@ -678,7 +684,7 @@ footer ul li a:hover {
   background-color: white;
   height: 75px;
   display: grid;
-  grid-template: 1fr 20px 20px 1fr/1fr 1fr 30px;
+  grid-template: 1fr 20px 20px 1fr/1fr 1fr 40px;
   margin-top: -10px;
   border-radius: 0 0 15px 15px;
   font-size: 0.9em;
@@ -692,12 +698,27 @@ footer ul li a:hover {
   margin: 5px 0 0 10px;
   color: #555555;
 }
-.restaurants_elements-description_description i {
+.restaurants_elements-description_description .transparent_hearts {
   grid-column: 3;
   grid-row: 2/3;
-  /*-----heart color ?----*/
   font-size: 1.3em;
-  margin: 10px 0 0 -15px;
+  margin: 10px 0 0 0;
+  /*-----hearts color----*/
+  opacity: 1;
 }
+.restaurants_elements-description_description .colored_hearts {
+  grid-column: 3;
+  grid-row: 2/3;
+  font-size: 1.3em;
+  margin: 10px 0 0 0;
+  opacity: 0;
+}
+.restaurants_elements-description_description .colored_hearts:hover {
+  opacity: 1;
+  color: #9b5fd4, #c878dc, #e997e2;
+  z-index: 1;
+}
+
+/*----hearts color----*/
 
 /*# sourceMappingURL=index_styles.css.map */

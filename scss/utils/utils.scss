@@ -20,6 +20,27 @@ $breakpoints: (
     padding: 7px 10px;
     color: $color-new;
     background-color: $bg-color-secondary;
+    border-radius: 5%;
+}
+
+@mixin hearts-position {
+    grid-column: 3;
+    grid-row: 2/3;                             
+    font-size: 1.3em;
+    margin: 10px 0 0 0;
+}
+
+@mixin transparent-hearts {
+    opacity: 1;
+}                                               /*----hearts color----*/
+
+@mixin colored-hearts {
+    opacity: 0;
+    &:hover {
+        opacity: 1;
+        color: $bg-btn;
+        z-index: 1;
+    }   
 }
 
 @mixin menu-elements {
