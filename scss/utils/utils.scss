@@ -50,6 +50,8 @@ $breakpoints: (
     grid-row: 2/3;                             
     font-size: 1.3em;
     margin: 10px 0 0 0;
+    width: 19px;
+    height: 18px;
 }
 
 @mixin transparent-hearts {
@@ -58,11 +60,20 @@ $breakpoints: (
 
 @mixin colored-hearts {
     opacity: 0;
-    &:hover {
+    &:active {
         opacity: 1;
-        color: $bg-btn;
+        color: $color-primary;
         z-index: 1;
+        transition: .5s;
     }   
+    @include desktop {
+        &:hover {
+            opacity: 1;
+            color: $color-primary;
+            z-index: 1;
+            transition: .5s;
+        }
+    }
 }
 
 @mixin menu-elements {

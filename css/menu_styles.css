@@ -1,3 +1,22 @@
+/*---------Variables-------------*/
+/*---------Keyframes-------------*/
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes opacitychange {
+  0%, 100% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+/*---------Mixins-------------*/
+/*----hearts color----*/
+/*---------Mixins media queries-------------*/
 body {
   margin: 0;
 }
@@ -28,10 +47,29 @@ header img {
   }
 }
 
-footer h3, .menu_title h1 {
+footer h3, .menu-title h1 {
   font-family: "Shrikhand", cursive;
 }
 
+/*---------Variables-------------*/
+/*---------Keyframes-------------*/
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes opacitychange {
+  0%, 100% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+/*---------Mixins-------------*/
+/*----hearts color----*/
+/*---------Mixins media queries-------------*/
 form {
   width: 215px;
   margin: auto;
@@ -58,6 +96,25 @@ form button:hover {
   }
 }
 
+/*---------Variables-------------*/
+/*---------Keyframes-------------*/
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes opacitychange {
+  0%, 100% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+/*---------Mixins-------------*/
+/*----hearts color----*/
+/*---------Mixins media queries-------------*/
 @media screen and (min-width: 1024px) {
   .menu_header {
     border-bottom: #cfcfcf solid 2px;
@@ -101,52 +158,56 @@ main #main_images_desktop {
 }
 
 /*---------SECTION Menu---------------*/
-.menu {
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 235px;
   width: 94%;
   border-radius: 2rem 2rem 0 0;
   background-color: #f7f6f6;
   /*---faire passer sur image---*/
-  padding: 0 3% 30px;
-  /*---animation vers gauche----*/
+  padding: 0 3%;
 }
 @media screen and (min-width: 800px) {
-  .menu {
-    border-radius: initial;
-    margin-top: -10px;
+  .menu-title {
+    top: 250px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .menu {
-    margin-top: 0;
-  }
-}
-.menu_title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (min-width: 1024px) {
-  .menu_title {
+  .menu-title {
+    position: initial;
     justify-content: flex-start;
     font-size: 1.15em;
+    border-radius: 0;
   }
 }
-.menu_title h1 {
+.menu-title h1 {
   font-size: 1.7em;
 }
-.menu_title i {
+.menu-title i {
   margin-right: 25px;
   font-size: 1.2em;
 }
 @media screen and (min-width: 1024px) {
-  .menu_title i {
+  .menu-title i {
     margin: 0 0 0 4%;
   }
+}
+
+.menu {
+  width: 94%;
+  background-color: #f7f6f6;
+  padding: 0 3% 30px;
+  /*---animation vers gauche----*/
 }
 .menu_subtitle {
   color: #555555;
   text-transform: uppercase;
   font-size: 1.2em;
+  margin-top: 0;
+  padding-top: 16px;
 }
 .menu_subtitle_border {
   width: 45px;
@@ -411,5 +472,25 @@ footer ul li a .fa-hands-helping {
 footer ul li a:hover {
   text-decoration: underline;
 }
+
+/*---------Variables-------------*/
+/*---------Keyframes-------------*/
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes opacitychange {
+  0%, 100% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+/*---------Mixins-------------*/
+/*----hearts color----*/
+/*---------Mixins media queries-------------*/
 
 /*# sourceMappingURL=menu_styles.css.map */

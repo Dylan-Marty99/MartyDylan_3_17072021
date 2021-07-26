@@ -207,7 +207,7 @@
         }
         &-images {
             margin-top: 15px;                               
-            border-radius: 0 15px 15px 15px;
+            border-radius: 15px;
             box-shadow: $shadow;
             @include large-smartphone {
                 margin-top: 25px;
@@ -218,6 +218,31 @@
             &:hover {
                 h3 {
                     color :$color-primary;
+                }
+            }
+            #new1, #new2 {
+                @include news;
+                @include large-smartphone {
+                    right: 45px;
+                }
+                @include tablet {
+                    position: initial;
+                    text-align: center;
+                    font-size: 1.1em;
+                    margin-top: -7px;
+                    padding-bottom: 15px;
+                }
+            }
+            #new1 {
+                top: 780px;
+                @include large-smartphone {
+                    top: 760px;
+                }                                           
+            }
+            #new2 {
+                top: 1035px;
+                @include large-smartphone {
+                    top: 1025px;
                 }
             }
         }
@@ -232,35 +257,7 @@
 
 
 .restaurants_elements-description {
-    #new1, #new2 {
-        @include news;
-        @include large-smartphone {
-            right: 45px;
-        }
-    }
-    #new1 {
-        top: 780px;
-        @include large-smartphone {
-            top: 760px;
-        }                                           /*---problème position---*/
-        @include tablet {                        /*----positionner autrement---*/
-            right: 435px;
-        }
-    }
-    #new2 {
-        top: 1035px;
-        @include large-smartphone {
-            top: 1025px;
-        }
-        @include tablet {                           /*---problème position---*/
-            top: 760px;                          /*----positionner autrement---*/
-            right: 60px;
-        }
-        @include desktop {
-            right: 75px;
-        }
-    }
-    &_description {
+    
         background-color: white;
         height: 75px;
         display: grid;
@@ -278,12 +275,11 @@
             color: $text-color;
         }
         .transparent_hearts {
-            @include hearts-position;           /*-----hearts color----*/
+            @include hearts-position;          
             @include transparent-hearts;
         }
         .colored_hearts {
             @include hearts-position;
             @include colored-hearts;
         }
-    }
 }
