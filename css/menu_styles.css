@@ -172,15 +172,16 @@ main #main_images_desktop {
 }
 @media screen and (min-width: 800px) {
   .menu-title {
-    top: 250px;
+    position: initial;
+    border-radius: 0;
+    margin-top: -10px;
   }
 }
 @media screen and (min-width: 1024px) {
   .menu-title {
-    position: initial;
     justify-content: flex-start;
     font-size: 1.15em;
-    border-radius: 0;
+    margin-top: 0;
   }
 }
 .menu-title h1 {
