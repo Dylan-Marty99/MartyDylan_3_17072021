@@ -6,7 +6,7 @@
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -14,8 +14,31 @@
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 body {
   margin: 0;
@@ -59,7 +82,7 @@ footer h3, .menu-title h1 {
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -67,8 +90,31 @@ footer h3, .menu-title h1 {
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 form {
   width: 215px;
@@ -104,7 +150,7 @@ form button:hover {
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -112,8 +158,31 @@ form button:hover {
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 @media screen and (min-width: 1024px) {
   .menu_header {
@@ -201,7 +270,6 @@ main #main_images_desktop {
   width: 94%;
   background-color: #f7f6f6;
   padding: 0 3% 30px;
-  /*---animation vers gauche----*/
 }
 .menu_subtitle {
   color: #555555;
@@ -218,6 +286,8 @@ main #main_images_desktop {
 }
 .menu_entrees {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: opacity-menu 0.8s ease-in-out both;
 }
 @media screen and (min-width: 800px) {
   .menu_entrees {
@@ -240,13 +310,29 @@ main #main_images_desktop {
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
   cursor: pointer;
-  transition: all 1s;
 }
 .menu_entrees_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_entrees_elements:hover .prix {
+  padding: 0 10px 10px 10px;
+}
+.menu_entrees_elements:hover .menu_animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9e0d1;
+  color: white;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 1.2rem 1.2rem 0;
+  font-size: 1.2em;
+}
 .menu_entrees_elements_description {
   padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .menu_entrees_elements_description {
@@ -262,9 +348,13 @@ main #main_images_desktop {
   color: #555555;
   font-size: 0.9em;
 }
+.menu_entrees_elements .description_prix {
+  display: flex;
+  flex-direction: row;
+}
 .menu_entrees_elements .prix {
   align-self: flex-end;
-  padding: 0 18px 10px 0;
+  padding-right: 20px;
 }
 @media screen and (min-width: 800px) {
   .menu_entrees_elements {
@@ -285,6 +375,8 @@ main #main_images_desktop {
 }
 .menu_plats {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: opacity-menu 0.8s ease-in-out 0.6s both;
 }
 @media screen and (min-width: 800px) {
   .menu_plats {
@@ -307,13 +399,29 @@ main #main_images_desktop {
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
   cursor: pointer;
-  transition: all 1s;
 }
 .menu_plats_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_plats_elements:hover .prix {
+  padding: 0 10px 10px 10px;
+}
+.menu_plats_elements:hover .menu_animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9e0d1;
+  color: white;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 1.2rem 1.2rem 0;
+  font-size: 1.2em;
+}
 .menu_plats_elements_description {
   padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .menu_plats_elements_description {
@@ -329,9 +437,13 @@ main #main_images_desktop {
   color: #555555;
   font-size: 0.9em;
 }
+.menu_plats_elements .description_prix {
+  display: flex;
+  flex-direction: row;
+}
 .menu_plats_elements .prix {
   align-self: flex-end;
-  padding: 0 18px 10px 0;
+  padding-right: 20px;
 }
 @media screen and (min-width: 800px) {
   .menu_plats_elements {
@@ -352,6 +464,8 @@ main #main_images_desktop {
 }
 .menu_desserts {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: opacity-menu 0.8s ease-in-out 1.2s both;
 }
 @media screen and (min-width: 800px) {
   .menu_desserts {
@@ -374,13 +488,29 @@ main #main_images_desktop {
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
   cursor: pointer;
-  transition: all 1s;
 }
 .menu_desserts_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_desserts_elements:hover .prix {
+  padding: 0 10px 10px 10px;
+}
+.menu_desserts_elements:hover .menu_animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9e0d1;
+  color: white;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 1.2rem 1.2rem 0;
+  font-size: 1.2em;
+}
 .menu_desserts_elements_description {
   padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .menu_desserts_elements_description {
@@ -396,9 +526,13 @@ main #main_images_desktop {
   color: #555555;
   font-size: 0.9em;
 }
+.menu_desserts_elements .description_prix {
+  display: flex;
+  flex-direction: row;
+}
 .menu_desserts_elements .prix {
   align-self: flex-end;
-  padding: 0 18px 10px 0;
+  padding-right: 20px;
 }
 @media screen and (min-width: 800px) {
   .menu_desserts_elements {
@@ -416,6 +550,14 @@ main #main_images_desktop {
     margin-left: 0;
     margin-right: 3%;
   }
+}
+.menu_animation {
+  display: none;
+  transform-origin: right;
+  animation: menu-element-appear 0.5s ease-out;
+}
+.menu_animation_icon {
+  animation: rotate-icon 0.7s ease-in-out;
 }
 
 /*---------FOOTER---------------*/
@@ -485,7 +627,7 @@ footer ul li a:hover {
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -493,8 +635,31 @@ footer ul li a:hover {
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 /*---------Loader---------------------*/
 .loader {
@@ -528,15 +693,15 @@ footer ul li a:hover {
   opacity: 0;
 }
 .loader_contenu span:nth-child(1) {
-  animation: opacitychange 1s ease-in-out 2;
+  animation: opacity-loader 1s ease-in-out 2;
   background: #8b59d5;
 }
 .loader_contenu span:nth-child(2) {
-  animation: opacitychange 1s ease-in-out 0.33s 2;
+  animation: opacity-loader 1s ease-in-out 0.33s 2;
   background: #e997e2;
 }
 .loader_contenu span:nth-child(3) {
-  animation: opacitychange 1s ease-in-out 0.66s 2;
+  animation: opacity-loader 1s ease-in-out 0.66s 2;
   background: #a9e0d1;
 }
 
@@ -563,7 +728,7 @@ footer ul li a:hover {
   background-color: #f7f6f6;
 }
 .main_header h2 {
-  width: 235px;
+  width: 250px;
   margin: auto;
   padding-top: 25px;
 }
@@ -804,6 +969,7 @@ footer ul li a:hover {
 .restaurants_elements-description h3 {
   grid-row: 2;
   margin: 0 0 0 10px;
+  width: 160px;
 }
 .restaurants_elements-description p {
   grid-row: 3;
@@ -851,7 +1017,7 @@ footer ul li a:hover {
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -859,8 +1025,31 @@ footer ul li a:hover {
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 
 /*# sourceMappingURL=index_styles.css.map */
