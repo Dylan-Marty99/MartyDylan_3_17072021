@@ -6,7 +6,7 @@
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -14,8 +14,15 @@
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 body {
   margin: 0;
@@ -59,7 +66,7 @@ footer h3, .menu-title h1 {
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -67,8 +74,15 @@ footer h3, .menu-title h1 {
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 form {
   width: 215px;
@@ -104,7 +118,7 @@ form button:hover {
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -112,8 +126,15 @@ form button:hover {
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 @media screen and (min-width: 1024px) {
   .menu_header {
@@ -201,7 +222,6 @@ main #main_images_desktop {
   width: 94%;
   background-color: #f7f6f6;
   padding: 0 3% 30px;
-  /*---animation vers gauche----*/
 }
 .menu_subtitle {
   color: #555555;
@@ -218,6 +238,8 @@ main #main_images_desktop {
 }
 .menu_entrees {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: opacity-menu 0.8s ease-in-out both;
 }
 @media screen and (min-width: 800px) {
   .menu_entrees {
@@ -284,6 +306,8 @@ main #main_images_desktop {
 }
 .menu_plats {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: opacity-menu 0.8s ease-in-out 0.6s both;
 }
 @media screen and (min-width: 800px) {
   .menu_plats {
@@ -350,6 +374,8 @@ main #main_images_desktop {
 }
 .menu_desserts {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: opacity-menu 0.8s ease-in-out 1.2s both;
 }
 @media screen and (min-width: 800px) {
   .menu_desserts {
@@ -482,7 +508,7 @@ footer ul li a:hover {
     z-index: -100;
   }
 }
-@keyframes opacitychange {
+@keyframes opacity-loader {
   0%, 100% {
     opacity: 0;
   }
@@ -490,8 +516,15 @@ footer ul li a:hover {
     opacity: 1;
   }
 }
+@keyframes opacity-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*---------Mixins-------------*/
-/*----hearts color----*/
 /*---------Mixins media queries-------------*/
 
 /*# sourceMappingURL=menu_styles.css.map */

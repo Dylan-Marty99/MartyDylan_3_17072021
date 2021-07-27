@@ -240,6 +240,7 @@ main #main_images_desktop {
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
   cursor: pointer;
+  transition: all 1s;
 }
 .menu_entrees_elements:hover .description_bold {
   color: #8b59d5;
@@ -306,6 +307,7 @@ main #main_images_desktop {
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
   cursor: pointer;
+  transition: all 1s;
 }
 .menu_plats_elements:hover .description_bold {
   color: #8b59d5;
@@ -372,6 +374,7 @@ main #main_images_desktop {
   border-radius: 1.2rem;
   box-shadow: #c4bfbf 2px 2px 10px;
   cursor: pointer;
+  transition: all 1s;
 }
 .menu_desserts_elements:hover .description_bold {
   color: #8b59d5;

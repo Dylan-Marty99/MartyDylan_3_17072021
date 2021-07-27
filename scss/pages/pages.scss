@@ -30,15 +30,15 @@
             margin: 35px 5px;
             opacity: 0;
             &:nth-child(1) {
-                animation: opacitychange 1s ease-in-out 2;
+                animation: opacity-loader 1s ease-in-out 2;
                 background: $color-primary;
             }
             &:nth-child(2) {
-                animation: opacitychange 1s ease-in-out 0.33s 2;
+                animation: opacity-loader 1s ease-in-out 0.33s 2;
                 background: rgb(233, 151, 226);
             }
             &:nth-child(3) {
-                animation: opacitychange 1s ease-in-out 0.66s 2;
+                animation: opacity-loader 1s ease-in-out 0.66s 2;
                 background: $bg-color-secondary;
             }
         }

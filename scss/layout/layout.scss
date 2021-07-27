@@ -93,12 +93,15 @@ main {
     } 
     &_entrees {
         @include menu-elements;
-    }                                                 /*---animation vers gauche----*/
+        animation: opacity-menu .8s ease-in-out both;
+    }                                                 
     &_plats {
         @include menu-elements;
+        animation: opacity-menu .8s ease-in-out .6s both;
     }
     &_desserts {
         @include menu-elements;
+        animation: opacity-menu .8s ease-in-out 1.2s both;
     }
 }
 

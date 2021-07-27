@@ -24,7 +24,7 @@ $breakpoints: (
     }
   } 
 
-@keyframes opacitychange{
+@keyframes opacity-loader{
     0%, 100%{
       opacity: 0;
     }
@@ -32,6 +32,16 @@ $breakpoints: (
     60%{
       opacity: 1;
     }
+  }
+
+  @keyframes opacity-menu {
+      0% {
+          opacity: 0;
+      }
+
+      100% {
+          opacity: 1;
+      }
   }
 
 /*---------Mixins-------------*/
@@ -56,7 +66,7 @@ $breakpoints: (
 
 @mixin transparent-hearts {
     opacity: 1;
-}                                               /*----hearts color----*/
+}                                               
 
 @mixin colored-hearts {
     opacity: 0;
@@ -78,6 +88,7 @@ $breakpoints: (
 
 @mixin menu-elements {
     margin-bottom: 40px;
+    opacity: 0;
     @include tablet {
         margin: 0 0 6% 40px;
     }
