@@ -44,6 +44,26 @@ $breakpoints: (
       }
   }
 
+  @keyframes menu-element-appear {
+      0% {
+          transform: scaleX(0);
+      }
+
+      100% {
+          transform: scaleX(1);
+      }
+  }
+
+  @keyframes rotate-icon {
+      0% {
+          transform: rotate(180deg) scaleX(0);
+      }
+
+      100% {
+          transform: rotate(360deg) scaleX(1);
+      }
+  }
+
 /*---------Mixins-------------*/
 
 @mixin news {
@@ -110,25 +130,48 @@ $breakpoints: (
             .description_bold {
                 color :$color-primary;
             }
+            .prix {
+                padding: 0 10px 10px 10px;
+            }
+            .menu_animation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $bg-color-secondary;
+                color: white;
+                width: 70px;
+                height: 60px;
+                border-radius: 0 1.2rem 1.2rem 0;
+                font-size: 1.2em;
+            }
         }
         &_description {
             padding-left: 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
             @include desktop {
                 padding-left: 3%;
             }
         }
-        .description_bold {
-            color: black;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        .description_normal {
-            color: $text-color;
-            font-size: .9em;
+        .description {
+            &_bold {
+                color: black;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+            &_normal {
+                color: $text-color;
+                font-size: .9em;
+            }
+            &_prix {
+                display: flex;
+                flex-direction: row;
+            }
         }
         .prix {
             align-self: flex-end;
-            padding: 0 18px 10px 0;
+            padding-right: 20px;
         }
         @include tablet {
             width: 90%;

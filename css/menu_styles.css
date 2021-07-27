@@ -22,6 +22,22 @@
     opacity: 1;
   }
 }
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
+  }
+}
 /*---------Mixins-------------*/
 /*---------Mixins media queries-------------*/
 body {
@@ -82,6 +98,22 @@ footer h3, .menu-title h1 {
     opacity: 1;
   }
 }
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
+  }
+}
 /*---------Mixins-------------*/
 /*---------Mixins media queries-------------*/
 form {
@@ -132,6 +164,22 @@ form button:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
   }
 }
 /*---------Mixins-------------*/
@@ -266,8 +314,25 @@ main #main_images_desktop {
 .menu_entrees_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_entrees_elements:hover .prix {
+  padding: 0 10px 10px 10px;
+}
+.menu_entrees_elements:hover .menu_animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9e0d1;
+  color: white;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 1.2rem 1.2rem 0;
+  font-size: 1.2em;
+}
 .menu_entrees_elements_description {
   padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .menu_entrees_elements_description {
@@ -283,9 +348,13 @@ main #main_images_desktop {
   color: #555555;
   font-size: 0.9em;
 }
+.menu_entrees_elements .description_prix {
+  display: flex;
+  flex-direction: row;
+}
 .menu_entrees_elements .prix {
   align-self: flex-end;
-  padding: 0 18px 10px 0;
+  padding-right: 20px;
 }
 @media screen and (min-width: 800px) {
   .menu_entrees_elements {
@@ -334,8 +403,25 @@ main #main_images_desktop {
 .menu_plats_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_plats_elements:hover .prix {
+  padding: 0 10px 10px 10px;
+}
+.menu_plats_elements:hover .menu_animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9e0d1;
+  color: white;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 1.2rem 1.2rem 0;
+  font-size: 1.2em;
+}
 .menu_plats_elements_description {
   padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .menu_plats_elements_description {
@@ -351,9 +437,13 @@ main #main_images_desktop {
   color: #555555;
   font-size: 0.9em;
 }
+.menu_plats_elements .description_prix {
+  display: flex;
+  flex-direction: row;
+}
 .menu_plats_elements .prix {
   align-self: flex-end;
-  padding: 0 18px 10px 0;
+  padding-right: 20px;
 }
 @media screen and (min-width: 800px) {
   .menu_plats_elements {
@@ -402,8 +492,25 @@ main #main_images_desktop {
 .menu_desserts_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_desserts_elements:hover .prix {
+  padding: 0 10px 10px 10px;
+}
+.menu_desserts_elements:hover .menu_animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9e0d1;
+  color: white;
+  width: 70px;
+  height: 60px;
+  border-radius: 0 1.2rem 1.2rem 0;
+  font-size: 1.2em;
+}
 .menu_desserts_elements_description {
   padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .menu_desserts_elements_description {
@@ -419,9 +526,13 @@ main #main_images_desktop {
   color: #555555;
   font-size: 0.9em;
 }
+.menu_desserts_elements .description_prix {
+  display: flex;
+  flex-direction: row;
+}
 .menu_desserts_elements .prix {
   align-self: flex-end;
-  padding: 0 18px 10px 0;
+  padding-right: 20px;
 }
 @media screen and (min-width: 800px) {
   .menu_desserts_elements {
@@ -439,6 +550,14 @@ main #main_images_desktop {
     margin-left: 0;
     margin-right: 3%;
   }
+}
+.menu_animation {
+  display: none;
+  transform-origin: right;
+  animation: menu-element-appear 0.5s ease-out;
+}
+.menu_animation_icon {
+  animation: rotate-icon 0.7s ease-in-out;
 }
 
 /*---------FOOTER---------------*/
@@ -522,6 +641,22 @@ footer ul li a:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes menu-element-appear {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(180deg) scaleX(0);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1);
   }
 }
 /*---------Mixins-------------*/

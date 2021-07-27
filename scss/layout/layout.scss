@@ -103,6 +103,14 @@ main {
         @include menu-elements;
         animation: opacity-menu .8s ease-in-out 1.2s both;
     }
+    &_animation {
+        display: none;
+        transform-origin: right;
+        animation: menu-element-appear .5s ease-out;
+        &_icon {
+            animation: rotate-icon .7s ease-in-out;
+        }
+    }
 }
 
 
