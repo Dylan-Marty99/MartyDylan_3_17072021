@@ -228,15 +228,14 @@ main #main_images_desktop {
 
 /*---------SECTION Menu---------------*/
 .menu-title {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template: 85px/300px 1fr 40px;
   align-items: center;
   position: absolute;
   top: 235px;
   width: 94%;
   border-radius: 2rem 2rem 0 0;
   background-color: #f7f6f6;
-  /*---faire passer sur image---*/
   padding: 0 3%;
 }
 @media screen and (min-width: 800px) {
@@ -248,7 +247,6 @@ main #main_images_desktop {
 }
 @media screen and (min-width: 1024px) {
   .menu-title {
-    justify-content: flex-start;
     font-size: 1.15em;
     margin-top: 0;
   }
@@ -263,6 +261,30 @@ main #main_images_desktop {
 @media screen and (min-width: 1024px) {
   .menu-title i {
     margin: 0 0 0 4%;
+  }
+}
+.menu-title .transparent_hearts {
+  opacity: 1;
+  grid-column: 3;
+  grid-row: 1;
+}
+.menu-title .colored_hearts {
+  opacity: 0;
+  grid-column: 3;
+  grid-row: 1;
+}
+.menu-title .colored_hearts:active {
+  opacity: 1;
+  color: #8b59d5;
+  z-index: 1;
+  transition: 0.5s;
+}
+@media screen and (min-width: 1024px) {
+  .menu-title .colored_hearts:hover {
+    opacity: 1;
+    color: #8b59d5;
+    z-index: 1;
+    transition: 0.5s;
   }
 }
 

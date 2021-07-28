@@ -276,11 +276,11 @@
             color: $text-color;
         }
         .transparent_hearts {
-            @include hearts-position;          
+            @include hearts-accueil-position;          
             @include transparent-hearts;
         }
         .colored_hearts {
-            @include hearts-position;
+            @include hearts-accueil-position;
             @include colored-hearts;
         }
 }

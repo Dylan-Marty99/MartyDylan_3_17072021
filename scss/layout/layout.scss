@@ -43,14 +43,14 @@ main {
 /*---------SECTION Menu---------------*/
 
 .menu-title {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template: 85px / 300px 1fr 40px;
     align-items: center;
     position: absolute;
     top: 235px;
     width: 94%;
     border-radius: 2rem 2rem 0 0;
-    background-color: $bg-color-primary;            /*---faire passer sur image---*/
+    background-color: $bg-color-primary;            
     padding: 0 3%;
     @include tablet {
         position: initial;
@@ -58,7 +58,6 @@ main {
         margin-top: -10px;
     }
     @include desktop {
-        justify-content: flex-start;
         font-size: 1.15em;
         margin-top: 0;
     }
@@ -71,6 +70,14 @@ main {
         @include desktop {
             margin: 0 0 0 4%;
         }
+    }
+    .transparent_hearts {       
+        @include transparent-hearts;
+        @include hearts-menu-position;
+    }
+    .colored_hearts {
+        @include colored-hearts;
+        @include hearts-menu-position;
     }
 }   
 

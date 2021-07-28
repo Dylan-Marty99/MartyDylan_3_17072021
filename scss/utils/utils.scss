@@ -75,13 +75,18 @@ $breakpoints: (
     border-radius: 5%;
 }
 
-@mixin hearts-position {
+@mixin hearts-accueil-position {
     grid-column: 3;
     grid-row: 2/3;                             
     font-size: 1.3em;
     margin: 10px 0 0 0;
     width: 19px;
     height: 18px;
+}
+
+@mixin hearts-menu-position {
+    grid-column: 3;
+    grid-row: 1;
 }
 
 @mixin transparent-hearts {
