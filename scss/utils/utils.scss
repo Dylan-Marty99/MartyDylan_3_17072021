@@ -136,7 +136,7 @@ $breakpoints: (
                 color :$color-primary;
             }
             .prix {
-                padding: 0 10px 10px 10px;
+                padding: 0 10px 7px 10px;
             }
             .menu_animation {
                 display: flex;
@@ -172,11 +172,13 @@ $breakpoints: (
             &_prix {
                 display: flex;
                 flex-direction: row;
+                transition: all 2s;
             }
         }
         .prix {
             align-self: flex-end;
             padding-right: 20px;
+            padding-top: 27px;
         }
         @include tablet {
             width: 90%;

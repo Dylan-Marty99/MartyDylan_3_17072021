@@ -337,7 +337,7 @@ main #main_images_desktop {
   color: #8b59d5;
 }
 .menu_entrees_elements:hover .prix {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 7px 10px;
 }
 .menu_entrees_elements:hover .menu_animation {
   display: flex;
@@ -373,10 +373,12 @@ main #main_images_desktop {
 .menu_entrees_elements .description_prix {
   display: flex;
   flex-direction: row;
+  transition: all 2s;
 }
 .menu_entrees_elements .prix {
   align-self: flex-end;
   padding-right: 20px;
+  padding-top: 27px;
 }
 @media screen and (min-width: 800px) {
   .menu_entrees_elements {
@@ -426,7 +428,7 @@ main #main_images_desktop {
   color: #8b59d5;
 }
 .menu_plats_elements:hover .prix {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 7px 10px;
 }
 .menu_plats_elements:hover .menu_animation {
   display: flex;
@@ -462,10 +464,12 @@ main #main_images_desktop {
 .menu_plats_elements .description_prix {
   display: flex;
   flex-direction: row;
+  transition: all 2s;
 }
 .menu_plats_elements .prix {
   align-self: flex-end;
   padding-right: 20px;
+  padding-top: 27px;
 }
 @media screen and (min-width: 800px) {
   .menu_plats_elements {
@@ -515,7 +519,7 @@ main #main_images_desktop {
   color: #8b59d5;
 }
 .menu_desserts_elements:hover .prix {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 7px 10px;
 }
 .menu_desserts_elements:hover .menu_animation {
   display: flex;
@@ -551,10 +555,12 @@ main #main_images_desktop {
 .menu_desserts_elements .description_prix {
   display: flex;
   flex-direction: row;
+  transition: all 2s;
 }
 .menu_desserts_elements .prix {
   align-self: flex-end;
   padding-right: 20px;
+  padding-top: 27px;
 }
 @media screen and (min-width: 800px) {
   .menu_desserts_elements {
