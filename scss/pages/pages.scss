@@ -130,6 +130,7 @@
         &:hover {
             background-color: rgb(245, 237, 254);
             box-shadow: (rgb(179, 178, 178) 4px 4px 8px);
+            transition-duration: .4s;
             i { 
                 color: $color-primary;
             }

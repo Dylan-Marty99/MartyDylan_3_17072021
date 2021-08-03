@@ -135,6 +135,13 @@ $breakpoints: (
             .description_bold {
                 color :$color-primary;
             }
+            .description_prix {
+                transform-origin: right;
+                animation: menu-element-appear .5s ease-out;
+                .menu_animation_icon {
+                    animation: rotate-icon .7s ease-in-out;
+                }
+            }
             .prix {
                 padding: 0 10px 7px 10px;
             }
@@ -172,7 +179,6 @@ $breakpoints: (
             &_prix {
                 display: flex;
                 flex-direction: row;
-                transition: all 2s;
             }
         }
         .prix {

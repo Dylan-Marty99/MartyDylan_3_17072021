@@ -336,8 +336,15 @@ main #main_images_desktop {
 .menu_entrees_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_entrees_elements:hover .description_prix {
+  transform-origin: right;
+  animation: menu-element-appear 0.5s ease-out;
+}
+.menu_entrees_elements:hover .description_prix .menu_animation_icon {
+  animation: rotate-icon 0.7s ease-in-out;
+}
 .menu_entrees_elements:hover .prix {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 7px 10px;
 }
 .menu_entrees_elements:hover .menu_animation {
   display: flex;
@@ -377,6 +384,7 @@ main #main_images_desktop {
 .menu_entrees_elements .prix {
   align-self: flex-end;
   padding-right: 20px;
+  padding-top: 27px;
 }
 @media screen and (min-width: 800px) {
   .menu_entrees_elements {
@@ -425,8 +433,15 @@ main #main_images_desktop {
 .menu_plats_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_plats_elements:hover .description_prix {
+  transform-origin: right;
+  animation: menu-element-appear 0.5s ease-out;
+}
+.menu_plats_elements:hover .description_prix .menu_animation_icon {
+  animation: rotate-icon 0.7s ease-in-out;
+}
 .menu_plats_elements:hover .prix {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 7px 10px;
 }
 .menu_plats_elements:hover .menu_animation {
   display: flex;
@@ -466,6 +481,7 @@ main #main_images_desktop {
 .menu_plats_elements .prix {
   align-self: flex-end;
   padding-right: 20px;
+  padding-top: 27px;
 }
 @media screen and (min-width: 800px) {
   .menu_plats_elements {
@@ -514,8 +530,15 @@ main #main_images_desktop {
 .menu_desserts_elements:hover .description_bold {
   color: #8b59d5;
 }
+.menu_desserts_elements:hover .description_prix {
+  transform-origin: right;
+  animation: menu-element-appear 0.5s ease-out;
+}
+.menu_desserts_elements:hover .description_prix .menu_animation_icon {
+  animation: rotate-icon 0.7s ease-in-out;
+}
 .menu_desserts_elements:hover .prix {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 7px 10px;
 }
 .menu_desserts_elements:hover .menu_animation {
   display: flex;
@@ -555,6 +578,7 @@ main #main_images_desktop {
 .menu_desserts_elements .prix {
   align-self: flex-end;
   padding-right: 20px;
+  padding-top: 27px;
 }
 @media screen and (min-width: 800px) {
   .menu_desserts_elements {
@@ -575,11 +599,6 @@ main #main_images_desktop {
 }
 .menu_animation {
   display: none;
-  transform-origin: right;
-  animation: menu-element-appear 0.5s ease-out;
-}
-.menu_animation_icon {
-  animation: rotate-icon 0.7s ease-in-out;
 }
 
 /*---------FOOTER---------------*/
@@ -826,6 +845,7 @@ footer ul li a:hover {
 .fonctionnement_element:hover {
   background-color: #f5edfe;
   box-shadow: #b3b2b2 4px 4px 8px;
+  transition-duration: 0.4s;
 }
 .fonctionnement_element:hover i {
   color: #8b59d5;

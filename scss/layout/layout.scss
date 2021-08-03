@@ -112,11 +112,6 @@ main {
     }
     &_animation {
         display: none;
-        transform-origin: right;
-        animation: menu-element-appear .5s ease-out;
-        &_icon {
-            animation: rotate-icon .7s ease-in-out;
-        }
     }
 }
 
